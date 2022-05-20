@@ -4,13 +4,11 @@ pipeline{
     stage('Build'){
       steps{
         sh '''
-        ls
         echo "Hola"
         echo $prueba
         pwd
         ls -lrt
         echo $password
-        pwd
         uname
         hostname
         touch 1
