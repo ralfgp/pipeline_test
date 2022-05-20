@@ -3,7 +3,19 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        echo "Do something 1"
+        sh '''
+        ls
+        echo "Hola"
+        echo $prueba
+        pwd
+        ls -lrt
+        echo $password
+        pwd
+        uname
+        docker ps
+        hostname
+        touch 1
+        '''
       }
     }
     stage('Test'){
