@@ -12,7 +12,6 @@ pipeline{
         echo $password
         pwd
         uname
-        docker ps
         hostname
         touch 1
         '''
