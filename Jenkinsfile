@@ -3,6 +3,11 @@ pipeline{
   stages{
     stage('Build'){
       steps{
+        echo "Do something 2"
+      }
+    }
+    stage('Test'){
+      steps{
         sh '''
         ls
         echo "Hola"
@@ -12,11 +17,6 @@ pipeline{
         hostname
         touch 1
         '''
-      }
-    }
-    stage('Test'){
-      steps{
-        echo "Do something 2"
       }
     }
     stage('Deploy'){
